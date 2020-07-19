@@ -16,7 +16,7 @@ class crawler {
             }
             let _data = '';
 
-            console.log("发送请求：" + requestOptions.host + requestOptions.path);
+            // console.log("发送请求：" + requestOptions.host + requestOptions.path);
 
             const req = https.request(requestOptions, function (res) {
                 res.setEncoding('utf8');
