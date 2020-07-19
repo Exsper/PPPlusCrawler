@@ -40,9 +40,9 @@ class crawler {
     static async getPPPlus(userName) {
         return await this.apiRequest(userName).then(data => {
             try {
-                if (!data) throw "抓取失败";
+                if (!data) throw "无法访问pp+网页";
                 let poi = data.indexOf('div class="performance-table"');
-                if (poi <0) return "抓取不到panel";
+                if (poi <0) return "找不到pp+信息，请检查玩家名";
                 const panel = data.substr(poi, 1000);
 
                 let ppplusData = {};

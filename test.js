@@ -1,4 +1,4 @@
-const crawler = require("./crawler")
+const crawler = require("./index")
 
 const readline = require("readline");
 const rl = readline.createInterface({
@@ -6,6 +6,6 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 rl.on("line", async (line) => {
-    let ppplus = await crawler.getPPPlus(line);
+    let ppplus = await crawler.get(line);
     console.log(ppplus + "\n");
 });
