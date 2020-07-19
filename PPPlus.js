@@ -49,14 +49,14 @@ class PPPlus {
     OutputNewCost() {
         const newcost = this.GetNewCost().toFixed(4);
         let output = "";
-        output = output + "Jump:" + this.AimJump + "\n";
-        output = output + "Flow:" + this.AimFlow + "\n";
-        output = output + "Precision:" + this.Precision + "\n";
-        output = output + "Acc:" + this.Accuracy + "\n";
-        output = output + "Speed:" + this.Speed + "\n";
-        output = output + "Stamina:" + this.Stamina + "\n";
+        output = output + "Jump: " + this.AimJump + "\n";
+        output = output + "Flow: " + this.AimFlow + "\n";
+        output = output + "Precision: " + this.Precision + "\n";
+        output = output + "Acc: " + this.Accuracy + "\n";
+        output = output + "Speed: " + this.Speed + "\n";
+        output = output + "Stamina: " + this.Stamina + "\n";
         output = output + "\n";
-        output = output + "newCost:" + newcost + "\n";
+        output = output + "newCost: " + newcost + "\n";
         return output;
     }
 }

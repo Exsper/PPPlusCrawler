@@ -1,8 +1,10 @@
 const https = require('https');
+const querystring = require('querystring');
 const PPPlus = require("./PPPlus");
 
 class crawler {
     static apiRequest(userName) {
+        userName = querystring.escape(userName);
         return new Promise((resolve, reject) => {
             const requestOptions = {
                 host: 'syrin.me',
