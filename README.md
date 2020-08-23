@@ -1,3 +1,5 @@
+由于PP+官网已停运，该项目停止更新
+
 # PPPlusCrawler
 In order to conveniently query personal new cost.
 
